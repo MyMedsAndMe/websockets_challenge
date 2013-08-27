@@ -23,7 +23,11 @@
   },
   "homepage": "https://github.com/MyMedsAndMe/websockets_challenge",
   "dependencies": {
-    "fs": "0.0.2",
-    "websocket": "^1.0.17"
+    "ws": "0.4.x",
+    "express": "3.x"
+  },
+  "engines": {
+    "node": "0.12.x",
+    "npm": "1.2.x"
   }
 }
