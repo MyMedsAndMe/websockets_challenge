@@ -27,7 +27,9 @@
     "express": "3.x"
   },
   "engines": {
-    "node": "0.12.x",
-    "npm": "1.2.x"
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }
