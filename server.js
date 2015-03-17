@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 var WebSocketServer = require('websocket').server;
 var http = require('http');
+var fs = require('fs');
 // var jsonFile = require('./medications.json');
 var now = function () {
   return '[' + new Date().toUTCString() + '] ';
@@ -9,14 +10,16 @@ var randomInt = function (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+var index = fs.readFileSync('public/index.html');
 var server = http.createServer(function (request, response) {
   console.log(now() + 'Received request from ' + request.url);
-  response.writeHead(404);
-  response.end();
+  response.writeHead(200, {'Content-Type': 'text/html'});
+  response.end(index);
 });
 
-server.listen(1337, function () {
-  console.log(now() + 'Server is listening on port 1337.');
+var port = (process.env.PORT || 5000);
+server.listen(port, function () {
+  console.log(now() + 'Server is listening on port:' + port);
 });
 
 var wsServer = new WebSocketServer({
