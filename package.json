@@ -1,0 +1,28 @@
+{
+  "name": "websocket-ui-challenge",
+  "version": "1.0.0",
+  "description": "An exciting front-end challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MyMedsAndMe/websockets_challenge.git"
+  },
+  "keywords": [
+    "websocket",
+    "frontend",
+    "challenge"
+  ],
+  "author": "Simone Vittori <hello+npm@simonewebdesign.it>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MyMedsAndMe/websockets_challenge/issues"
+  },
+  "homepage": "https://github.com/MyMedsAndMe/websockets_challenge",
+  "dependencies": {
+    "websocket": "^1.0.17"
+  }
+}
