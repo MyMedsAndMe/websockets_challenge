@@ -1,0 +1,17 @@
+{  
+   "medications":[
+      {  
+         "diuretic":[
+            {  
+               "name":"furosemide",
+               "strength":"40 mg Tab",
+               "dose":"1 tab",
+               "route":"PO",
+               "sig":"daily",
+               "pillCount":"#90",
+               "refills":"Refill 3"
+            }
+         ]
+      }
+   ]
+}

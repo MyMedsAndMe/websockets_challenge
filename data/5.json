@@ -1,0 +1,15 @@
+{
+   "labs":[  
+      {  
+         "name":"Glucose",
+         "time":"1 Year",
+         "location":"Main Hospital Lab"
+      },
+      {  
+         "name":"PT/INR",
+         "time":"3 Weeks",
+         "location":"Primary Care Clinic"
+      }
+   ]
+}
+

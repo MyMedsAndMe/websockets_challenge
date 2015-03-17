@@ -1,0 +1,14 @@
+{
+   "labs":[  
+      {  
+         "name:"BUN",
+         "time":"1 Year",
+         "location":"Primary Care Clinic"
+      },
+      {  
+         "name":"Cardiac Enzymes",
+         "time":"Today",
+         "location":"Primary Care Clinic"
+      }
+   ]
+}

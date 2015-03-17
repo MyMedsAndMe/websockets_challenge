@@ -1,0 +1,17 @@
+{  
+   "medications":[
+      {
+         "mineral":[
+            {  
+               "name":"potassium chloride ER",
+               "strength":"10 mEq Tab",
+               "dose":"1 tab",
+               "route":"PO",
+               "sig":"daily",
+               "pillCount":"#90",
+               "refills":"Refill 3"
+            }
+         ]
+      }
+   ]
+}

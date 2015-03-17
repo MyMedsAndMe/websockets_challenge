@@ -1,0 +1,19 @@
+{
+   "imaging":[  
+      {  
+         "name":"Chest X-Ray",
+         "time":"Today",
+         "location":"Main Hospital Radiology"
+      },
+      {  
+         "name":"Chest X-Ray",
+         "time":"3 Weeks",
+         "location":"Main Hospital Radiology"
+      },
+      {  
+         "name":"Chest X-Ray",
+         "time":"Today",
+         "location":"Main Hospital Radiology"
+      }
+   ]
+}

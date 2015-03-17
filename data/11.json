@@ -1,0 +1,28 @@
+{  
+   "medications":[  
+      {  
+         "anticoagulants":[  
+            {  
+               "name":"warfarin sodium",
+               "strength":"3 mg Tab",
+               "dose":"1 tab",
+               "route":"PO",
+               "sig":"daily",
+               "pillCount":"#90",
+               "refills":"Refill 3"
+            }
+         ],
+         "betaBlocker":[  
+            {  
+               "name":"metoprolol tartrate",
+               "strength":"25 mg Tab",
+               "dose":"1 tab",
+               "route":"PO",
+               "sig":"daily",
+               "pillCount":"#90",
+               "refills":"Refill 3"
+            }
+         ]
+      }
+   ]
+}

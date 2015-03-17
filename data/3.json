@@ -1,0 +1,14 @@
+{
+   "labs":[  
+      {  
+         "name":"CBC",
+         "time":"1 Year",
+         "location":"Primary Care Clinic"
+      },
+      {  
+         "name":"Creatinine",
+         "time":"1 Year",
+         "location":"Main Hospital Lab"
+      }
+   ]
+}
