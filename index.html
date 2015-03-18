@@ -44,17 +44,21 @@
   ]
 }</code></pre>
   <p>Please build a web application that displays all the data.</p>
+  <p>The endpoint you should connect to is <code id="wshost"></code></p>
   <p>Once you'll be connected to our service, it will send updates in an interval that can range between 3 and 30 seconds.</p>
   <p>Sometimes you'll get duplicate data; in this case you should display it only once. This is the only requirement. Apart from this, feel free to display all the data you get in a way that you think is reasonable.</p>
   <p>The service may also return invalid data (i.e. bad formatted JSON), so make sure your application can handle potential issues like this one.</p>
   <p>You're free to use any frameworks or libraries that will help you with the challenge, but please be prepared to explain your choices. Also bear in mind that we're more interested in the functionality rather than the appearances; however, you'll get extra kudos if the app looks amazing.</p>
   <p>When the project has been completed it should be presented in a state which is maintainable by another developer. To that end:</p>
   <ul>
-  <li>Tell us how to run the app</li>
-  <li>Tell us how to run your tests</li>
-  <li>Add comments in any code that needs them</li>
+  <li>Tell us how to run the app;</li>
+  <li>Tell us how to run your tests;</li>
+  <li>Add comments in any code that needs them.</li>
   </ul>
-  <p>This project should be deployed to a GitHub repository which should be committed to frequently. Please don't add any references to 'MyMeds&amp;Me' in your repo.</p>
   <p>Good Luck!</p>
+
+  <script>
+    document.getElementById('wshost').innerText = location.origin.replace(/^http/, 'ws')
+  </script>
 </body>
 </html>
