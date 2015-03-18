@@ -30,14 +30,8 @@ wss.on("connection", function (ws) {
 
       if (data) {
         ws.send(data, function (error) {
-          if (error) {
-            console.log("ws.send error", error)
-          } else {
-            // console.log("ws.send callback: data has been sent to the client")
-          }
-        })/
-      } else {
-        console.log("data hasn't been sent because it was", (typeof data), data)
+          if (error) console.log("ws.send error", error)
+        })
       }
     })
 
