@@ -56,17 +56,5 @@
   </ul>
   <p>This project should be deployed to a GitHub repository which should be committed to frequently. Please don't add any references to 'MyMeds&amp;Me' in your repo.</p>
   <p>Good Luck!</p>
-
-
-
-  <script>
-    var host = location.origin.replace(/^http/, 'ws')
-    var ws = new WebSocket(host)
-    ws.onmessage = function (event) {
-
-        // var data = JSON.parse(event.data)
-        console.log("data", (typeof event.data), event.data)
-    }
-  </script>
 </body>
 </html>
