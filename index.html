@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>WebSocket Service</title>
 </head>
 <body>
@@ -11,8 +11,9 @@
     var host = location.origin.replace(/^http/, 'ws')
     var ws = new WebSocket(host)
     ws.onmessage = function (event) {
-      var data = JSON.parse(event.data)
-      console.log(data)
+
+        // var data = JSON.parse(event.data)
+        console.log("data", (typeof event.data), event.data)
     }
   </script>
 </body>

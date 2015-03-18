@@ -4,8 +4,7 @@
   "description": "An exciting front-end challenge",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -28,8 +27,5 @@
   },
   "engines": {
     "node": "0.12.x"
-  },
-  "scripts": {
-    "start": "node index.js"
   }
 }
