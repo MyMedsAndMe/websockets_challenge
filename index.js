@@ -35,7 +35,7 @@ wss.on("connection", function (ws) {
       }
     })
 
-  }, randomInt(3000, 30000))
+  }, randomInt(3000, 10000))
 
   console.log("websocket connection open")
 
