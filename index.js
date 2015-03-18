@@ -26,22 +26,22 @@ wss.on("connection", function (ws) {
 
     fs.readFile(fileName, "utf8", function (error, data) {
       if (error) console.log('fs.readFile error', error)
-      console.log("fs.readfile data DEBUG ************", (typeof data), data)
+      // console.log("fs.readfile data DEBUG ************", (typeof data), data)
 
       if (data) {
         ws.send(data, function (error) {
           if (error) {
             console.log("ws.send error", error)
           } else {
-            console.log("ws.send callback: data has been sent to the client")
+            // console.log("ws.send callback: data has been sent to the client")
           }
-        })
+        })/
       } else {
         console.log("data hasn't been sent because it was", (typeof data), data)
       }
     })
 
-  }, randomInt(300, 3000))
+  }, randomInt(3000, 30000))
 
   console.log("websocket connection open")
 
