@@ -21,10 +21,8 @@ console.log("websocket server created")
 
 wss.on("connection", function (ws) {
   // send data in a random interval between 3 and 30 seconds
-  setInterval(function () {
+  var id = setInterval(function () {
     var fileName = './data/' + randomInt(0, 14) + '.json'
-    var isClientDead = false
-    if (isClientDead) return
 
     fs.readFile(fileName, "utf8", function (error, data) {
       if (error) console.log('fs.readFile error', error)
@@ -34,7 +32,6 @@ wss.on("connection", function (ws) {
         ws.send(data, function (error) {
           if (error) {
             console.log("ws.send error", error)
-            isClientDead = true
           } else {
             console.log("ws.send callback: data has been sent to the client")
           }
@@ -50,5 +47,6 @@ wss.on("connection", function (ws) {
 
   ws.on("close", function () {
     console.log("websocket connection close")
+    clearInterval(id)
   })
 })
