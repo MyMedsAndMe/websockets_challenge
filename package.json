@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "An exciting front-end challenge",
   "main": "server.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/MyMedsAndMe/websockets_challenge.git"
